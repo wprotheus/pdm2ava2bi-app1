@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_result"
+    tools:context=".ui.ResultFragment">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:contentDescription="@string/txt_recorte_logo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/txtAtencao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:srcCompat="@drawable/olympus" />
+
+    <TextView
+        android:id="@+id/txtAtencao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/txt_soma"
+        android:text="@string/txt_soma"
+        android:textAlignment="center"
+        android:textColor="@color/txt_title"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/ettResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <EditText
+        android:id="@+id/ettResultado"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:autofillHints="@string/txt_valor_soma"
+        android:ems="8"
+        android:hint="@string/txt_valor_soma"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/cor_nome_app"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnConferir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAtencao" />
+
+    <Button
+        android:id="@+id/btnConferir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_verificar"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ivResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettResultado" />
+
+    <ImageView
+        android:id="@+id/ivResultado"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/bck_alert"
+        android:contentDescription="@string/txt_desc_img_resultado"
+        android:src="@drawable/exclamation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConferir" />
+
+    <Button
+        android:id="@+id/btnAvancar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:text="@string/btn_next"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

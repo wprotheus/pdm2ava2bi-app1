@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/menu_view"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.wprotheus.wellingtonbpneto.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_deck"
+        android:name="com.wprotheus.wellingtonbpneto.ui.DeckFragment"
+        android:label="@string/menu_deck"
+        tools:layout="@layout/fragment_deck" />
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.wprotheus.wellingtonbpneto.ui.StartFragment"
+        android:label="@string/menu_start"
+        tools:layout="@layout/fragment_start" />
+
+    <fragment
+        android:id="@+id/nav_show"
+        android:name="com.wprotheus.wellingtonbpneto.ui.ShowFragment"
+        android:label="@string/menu_show"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="com.wprotheus.wellingtonbpneto.ui.ResultFragment"
+        android:label="@string/menu_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.wprotheus.wellingtonbpneto.ui.ReportFragment"
+        android:label="@string/txt_title_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/nav_view"
+        android:name="com.wprotheus.wellingtonbpneto.ui.ViewResultFragment"
+        android:label="@string/menu_view"
+        tools:layout="@layout/fragment_view_result" />
+
+</navigation>

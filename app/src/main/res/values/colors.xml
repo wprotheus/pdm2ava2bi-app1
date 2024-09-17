@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cor_nome_app">#BF360C</color>
+    <color name="txt_title">#FFBF360C</color>
+    <color name="color_ted">#042C6A</color>
+    <color name="bck_color">#e5ead9</color>
+    <color name="bck_alert">#FFF3E0</color>
+    <color name="bac_logo">#151936</color>
+    <color name="mojito_color">#DEE8E0</color>
+
+    <!-- Colors for Dark Mode -->
+    <color name="black_dark">#FFFFFFFF</color>
+    <color name="white_dark">#FF000000</color>
+    <color name="cor_nome_app_dark">#FF8A65</color>
+    <color name="txt_title_dark">@color/cor_nome_app</color>
+    <color name="color_ted_dark">#8BA3D0</color>
+    <color name="bck_color_dark">#e5ead9</color>
+    <color name="bac_logo_dark">#5C6BC0</color>
+
+    <!-- Button colors for light mode -->
+    <color name="button_background">#FF8F00</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <!-- Button colors for dark mode -->
+    <color name="button_background_dark">#0855AD</color>
+    <color name="button_text_dark">#FF000000</color>
+
+    <color name="cp_secundaria">#42A5F5</color>
+    <color name="cp_primaria">#3949AB</color>
+    <color name="cp_primaria_variante">#1A237E</color>
+    <color name="cs_secundaria">#4DB6AC</color>
+    <color name="cs_secundaria_variante">#FF018786</color>
+    <color name="backGroundApp">#C8E6C9</color>
+    <color name="texto_azul">#0D47A1</color>
+    <color name="texto_verde">#1B5E20</color>
+    <color name="texto_vermelho">#B71C1C</color>
+    <color name="texto_verde_esc">#021B17</color>
+    <color name="texto_laranja">#992907</color>
+    <color name="texto_azul_esc">#1A237E</color>
+</resources>

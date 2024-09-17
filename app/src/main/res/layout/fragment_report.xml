@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.ReportFragment">
+
+    <TextView
+        android:id="@+id/tvResultadoView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cs_secundaria"
+        android:contentDescription="@string/txt_desc_view_deck_report"
+        android:text="@string/txt_titulo_deck_report"
+        android:textAlignment="center"
+        android:textColor="@color/texto_verde_esc"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:text="@string/btn_next"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoView" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@color/mojito_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDeckOfCardsReport"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@color/mojito_color"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintVertical_bias="0.5"
+        tools:listitem="@layout/report_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clCardLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="0dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/bac_logo"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/llCardLayout" />
+
+    <TextView
+        android:id="@+id/tvEspaco"
+        android:layout_width="3dp"
+        android:layout_height="35dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toEndOf="@+id/tvFinalizando"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFinalizando"
+        android:layout_width="3dp"
+        android:layout_height="35dp"
+        android:background="@color/bac_logo"
+        card_view:layout_constraintStart_toEndOf="@+id/llCardLayout"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSeparador"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="3dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <LinearLayout
+        android:id="@+id/llCardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivNaipe"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/borda_verde_layout"
+            android:contentDescription="@string/txt_desc_img"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            tools:srcCompat="@drawable/qd" />
+
+        <TextView
+            android:id="@+id/tvCodigo"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="1dp"
+            android:autoSizeTextType="none"
+            android:background="@drawable/borda_verde_layout"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/tv_code"
+            android:textAlignment="center"
+            android:textColor="@color/txt_title"
+            android:textColorLink="@android:color/holo_red_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tvValor"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="1dp"
+            android:background="@drawable/borda_verde_layout"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/txt_value"
+            android:textAlignment="center"
+            android:textColor="@color/txt_title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tvNaipe"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="1dp"
+            android:autoSizeTextType="none"
+            android:background="@drawable/borda_verde_layout"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/txt_suit"
+            android:textAlignment="center"
+            android:textColor="@color/txt_title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

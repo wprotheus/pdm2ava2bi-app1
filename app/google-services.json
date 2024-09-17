@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "830023433095",
+    "firebase_url": "https://ava-pdm2-final-default-rtdb.firebaseio.com",
+    "project_id": "ava-pdm2-final",
+    "storage_bucket": "ava-pdm2-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830023433095:android:dad1e5a3f655730a897122",
+        "android_client_info": {
+          "package_name": "com.wprotheus.wellingtonbpneto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAXI3yJQkuJMc-2sfti7wt6KCTXTnnkBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

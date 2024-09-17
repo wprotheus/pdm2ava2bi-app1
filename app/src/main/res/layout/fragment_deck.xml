@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/nav_deck"
+    tools:context=".ui.DeckFragment">
+
+    <TextView
+        android:id="@+id/tvDeckOfCards"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#64B5F6"
+        android:contentDescription="@string/txt_desc_view_deck"
+        android:text="@string/txt_titulo_deck"
+        android:textAlignment="center"
+        android:textColor="@color/color_ted"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@color/mojito_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeckOfCards" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDeckOfCards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:background="@color/mojito_color"
+        android:paddingLeft="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_marginBaseline="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

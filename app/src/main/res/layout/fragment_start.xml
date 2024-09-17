@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bck_alert"
+    android:id="@+id/nav_start"
+    tools:context=".ui.StartFragment">
+
+    <TextView
+        android:id="@+id/tvNomeApp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/borda_preta_layout"
+        android:contentDescription="@string/txt_desc_titulo_start"
+        android:drawablePadding="17dp"
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:text="@string/txt_titulo_start"
+        android:textAlignment="center"
+        android:textColor="@color/cor_nome_app"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:drawableLeftCompat="@drawable/aces"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInstrucao"
+        android:layout_width="269dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="27dp"
+        android:autoSizeTextType="uniform"
+        android:background="#B3E5FC"
+        android:contentDescription="@string/txt_instrucao"
+        android:padding="8dp"
+        android:text="@string/txt_instrucao"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvValoresCartas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeApp" />
+
+    <TextView
+        android:id="@+id/tvValoresCartas"
+        android:layout_width="222dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:autoSizeTextType="uniform"
+        android:contentDescription="@string/txt_desc_valores_cartas"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="8dp"
+        android:text="@string/txt_valores_cartas"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_ted"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tilNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInstrucao" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNome"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tilQuantidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvValoresCartas">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_dica_nome"
+            android:maxLength="17"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilQuantidade"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNome">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_dica_quantidade"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:contentDescription="@string/btn_jogar"
+        android:letterSpacing="1"
+        android:text="@string/btn_jogar"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilQuantidade" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

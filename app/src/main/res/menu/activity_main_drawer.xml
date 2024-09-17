@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_deck"
+            android:icon="@drawable/poker"
+            android:title="@string/menu_deck" />
+        <item
+            android:id="@+id/nav_start"
+            android:icon="@drawable/play"
+            android:title="@string/menu_start" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/report"
+            android:title="@string/menu_report" />
+        <item
+            android:id="@+id/nav_show"
+            android:icon="@drawable/film"
+            android:title="@string/menu_show" />
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/result"
+            android:title="@string/menu_result" />
+        <item
+            android:id="@+id/nav_view"
+            android:icon="@drawable/firebase"
+            android:title="@string/menu_view" />
+    </group>
+</menu>

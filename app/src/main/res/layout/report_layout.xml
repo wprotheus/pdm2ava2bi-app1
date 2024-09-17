@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clReport"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/borda_preta_layout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clReportTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary90"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCodeReport"
+            android:layout_width="44dp"
+            android:layout_height="26dp"
+            android:background="@drawable/borda_verde_layout"
+            android:gravity="center"
+            android:text="@string/txt_value_code_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvValueReport"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvValueReport"
+            android:layout_width="44dp"
+            android:layout_height="26dp"
+            android:background="@drawable/borda_verde_layout"
+            android:gravity="center"
+            android:text="@string/txt_value_value_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCodeReport"
+            app:layout_constraintEnd_toStartOf="@+id/tvSuitReport"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCodeReport"
+            app:layout_constraintTop_toTopOf="@+id/tvCodeReport" />
+
+        <TextView
+            android:id="@+id/tvSuitReport"
+            android:layout_width="71dp"
+            android:layout_height="26dp"
+            android:background="@drawable/borda_verde_layout"
+            android:gravity="center"
+            android:text="@string/txt_value_suit_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvValueReport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvValueReport"
+            app:layout_constraintTop_toTopOf="@+id/tvValueReport" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clReportCardValue"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary90"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clReportTitle">
+
+        <TextView
+            android:id="@+id/tvValueCodeReport"
+            android:layout_width="44dp"
+            android:layout_height="26dp"
+            android:background="@drawable/borda_preta_cor_fundo_layout"
+
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/txt_code_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvValueValueReport"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvValueValueReport"
+            android:layout_width="44dp"
+            android:layout_height="26dp"
+            android:background="@drawable/borda_preta_cor_fundo_layout"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/txt_value_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvValueCodeReport"
+            app:layout_constraintEnd_toStartOf="@+id/tvValueSuitReport"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvValueCodeReport"
+            app:layout_constraintTop_toTopOf="@+id/tvValueCodeReport" />
+
+        <TextView
+            android:id="@+id/tvValueSuitReport"
+            android:layout_width="71dp"
+            android:layout_height="26dp"
+            android:background="@drawable/borda_preta_cor_fundo_layout"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/txt_suit_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvValueValueReport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvValueValueReport"
+            app:layout_constraintTop_toTopOf="@+id/tvValueValueReport" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clReportLink"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/material_dynamic_primary90"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clReportCardValue">
+
+        <TextView
+            android:id="@+id/tvLinkReport"
+            android:layout_width="43dp"
+            android:layout_height="35dp"
+            android:background="@drawable/borda_verde_layout"
+            android:gravity="center"
+            android:text="@string/txt_value_link_report"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvValueLinkReport"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/borda_preta_cor_fundo_layout"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/txt_link_report"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColorLink="@color/cor_nome_app"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLinkReport"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/bac_logo_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clReportLink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

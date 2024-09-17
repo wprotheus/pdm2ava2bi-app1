@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">wellingtonbpneto</string>
+    <string name="nav_header_title">2ª Avaliação Bimestral - PDM2</string>
+    <string name="nav_header_subtitle">wellington.neto@estudante.ifto.edu.br</string>
+    <string name="nav_header_desc">Segunda avaliação bimestral dispositivos móveis 2</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_deck">Baralho</string>
+    <string name="menu_start">Jogar</string>
+    <string name="menu_report">Relatório</string>
+    <string name="menu_show">Show</string>
+    <string name="menu_result">Resultados</string>
+    <string name="menu_view">Visulização Firebase</string>
+
+    <string name="txt_recorte_logo">Recorte do logotipo de Olimpus</string>
+    <string name="txt_logo">Logotipo do IFTO</string>
+
+    <string name="dados_baixados">Dados baixados e prontos para uso</string>
+    <string name="problema_end">URL inválida ou erro ao obter os dados</string>
+
+    <string name="desc_logo">Logo Monte Olimpo</string>
+
+    <string name="txt_desc_view_deck">Visualização do baralho baixado</string>
+    <string name="txt_desc_view_deck_report">Visualização das cartas escolhidas</string>
+
+    <string name="tv_code">QD</string>
+    <string name="txt_desc_img">Imagem ilustrativa naípes do baralho</string>
+    <string name="txt_value">QUEEN</string>
+    <string name="txt_suit">DIAMONDS</string>
+    <string name="msg_erro">Erro ao gravar os dados!:(</string>
+    <string name="msg_certo">Dados gravados com sucesso!:)</string>
+    <string name="txt_titulo_deck">Visualização do Deck Baixado</string>
+    <string name="txt_titulo_deck_report">Relatório das cartas escolhidas</string>
+    <string name="txt_titulo_start">Somando valores</string>
+    <string name="txt_desc_titulo_start">Somando valores</string>
+
+    <string name="txt_dica_nome">Digite seu nome</string>
+    <string name="txt_instrucao">Informe a quantidade desejada\nde cartas a serem mostradas.\nA quantidade deve estar entre\n 6 (mínimo) e 52 (máximo).\nO objetivo é você memorizar os\nvalores das cartas e somá-los.\nNa tela seguinte digitar o\nresultado dessa soma.</string>
+    <string name="txt_valores_cartas">Os valores das cartas:\n1. A (Ás/Ace) = 1\n2. Do 2-10 = próprio valor\n3. J (Valete/Jack) = 10\n4. Q (Dama/Queen) = 20\n5. K (Rei/King) = 30</string>
+    <string name="txt_desc_valores_cartas">Os valores das cartas serão esses:\n1. A (Ás/Ace) = 1\n2. Do 2 ao 10 = respectivo número\n3. J (Valete/Jack) = 10\n4. Q (Dama/Queen) = 20\n5. K (Rei/King) = 30</string>
+    <string name="txt_dica_quantidade">Quantidade de cartas</string>
+    <string name="btn_jogar">GABARITO</string>
+    <string name="btn_verificar">CONFERIR</string>
+
+    <string name="txt_atencao">As cartas serão \nmostradas abaixo,\nS O M E\nseus valores e memorize-os.</string>
+    <string name="txt_soma">Digite no espaço abaixo \no valor da soma \ndos valores das cartas mostradas \nna tela anterior.</string>
+    <string name="txt_valor_soma">Soma dos valores...</string>
+    <string name="txt_desc_img_resultado">Imagem de um gato feliz (acertou)\n e um triste (errou).</string>
+    <string name="txt_desc_cards">As cartas serão mostradas nesse espaço</string>
+    <string name="txt_title_report">Relatório</string>
+    <string name="txt_code_report">QD</string>
+    <string name="txt_value_report">QUEEN</string>
+    <string name="txt_suit_report">DIAMONDS</string>
+    <string name="txt_link_report">https://www.deckofcardsapi.com/static/img/QD.png</string>
+    <string name="txt_value_code_report">CODE</string>
+    <string name="txt_value_value_report">VALUE</string>
+    <string name="txt_value_suit_report">SUIT</string>
+    <string name="txt_value_link_report">LINK</string>
+
+    <string name="channel">Channel#8</string>
+    <string name="desc_channel">Descrição do canal #8</string>
+    <string name="title_not">Deck of Cards</string>
+    <string name="desc_not">Iniciado o download do arquivo</string>
+    <string name="nome_classe"><![CDATA[Dados prontos]]></string>
+    <string name="perm_title">Atenção</string>
+    <string name="msg_perm">Permissão necessária para executar o app</string>
+    <string name="btn_sim">SIM</string>
+    <string name="btn_nao">NÃO</string>
+    <string name="msg_sair">Até logo</string>
+    <string name="btn_next">PRÓXIMA TELA</string>
+    <string name="txt_nr_ranking">PARTIDA</string>
+    <string name="txt_nome_jogador">JOGADOR</string>
+    <string name="txt_palpite_jogador">PALPITE</string>
+    <string name="txt_resultado_jogada">RESULTADO</string>
+    <string name="txt_ranking_nr">01</string>
+    <string name="txt_jogador_nome">Ana</string>
+    <string name="txt_jogador_palpite">33</string>
+    <string name="txt_jogada_resultado">Acertou</string>
+    <string name="txt_titulo">RANKING DAS PARTIDAS JOGADAS</string>
+    <string name="btn_home">HOME</string>
+</resources>
